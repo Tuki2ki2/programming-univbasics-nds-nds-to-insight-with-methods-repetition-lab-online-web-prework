@@ -36,12 +36,14 @@ end
 def total_gross(source)
   inner_index = 0
   total = 0
-  while inner_index < 3 do
-  total += directors_totals (source)[list_of_directors(source)[inner_index]]
+  while inner_index < source.legnth do
+  total += directors_totals(source)[list_of_directors(source)[inner_index]]
   inner_index +=1
   end
   total
   end
+
+  total_gross (source)
 
 
   # Write this implementation
