@@ -34,10 +34,10 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
-  column_index = 0
-  running_total = 0
-  while column_index < list_of_directors.length do
-  running_total += directors_totals(source)
+  index = 0
+  grand_total = 0
+  while index < list_of_directors (source).length do
+  grand_total += directors_totals(source)[list_of_directors(source)[index]] 
   index +=1
   end
   running_total
